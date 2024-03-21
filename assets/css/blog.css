@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    color: black;
+}
+
+#themeToggle {
+    position: absolute;
+    left: 83%;
+    top:5%;
+    color:white;
+    background: black;
+}
+
+body.dark-mode #themeToggle {
+    color:rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+h1{
+    margin: 22px;
+}
+
+.horizontal-lines {
+    position: absolute;
+    width: 100%;
+    border-bottom: 14px double black;
+    bottom: 90%;
+} 
+body.dark-mode .horizontal-lines{
+    position: absolute;
+    width: 100%;
+    border-bottom: 14px double rgb(255, 255, 255);
+    bottom: 90%;
+}
+
+header {
+    margin-bottom: 45px;
+}
+
+.horizontal-lines-2 {
+    width: 100%;
+    border-bottom: 14px double black;
+    bottom: 10%;
+}
+
+body.dark-mode .horizontal-lines-2 {
+    border-bottom: 14px double rgb(255, 255, 255);
+}
+
+.trademark {
+    font-size: 150%;
+}
+
+.links {
+    margin: 10px;
+}
+
+#back {
+    position: absolute;
+    top: 2%;  
+    left: 86%;
+    color:white;
+    background: black;
+}
+
+body.dark-mode #back {
+    color:rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+.blog-entry {
+    margin: 18px;
+    padding-right:10px;
+    width: 96%;
+    height: 150px;
+    border: 2px solid black;
+}
+
+body.dark-mode .blog-entry {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.blog-title {
+    padding-top:5px;
+    border-bottom: 2px solid black;
+    width: 97%;
+    margin-left:12px;
+}
+
+body.dark-mode .blog-title {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.username {
+    display: flex;
+}
+
+.blog-content {
+    margin-left: 25px;
+    padding-top: 5px;
+}
+
+.posted-by {
+    display: flex;
+    margin-top: 73px;
+    margin-left:12px;
+}
+
+.username {
+    padding-left: 3px;
+}
+
+footer {
+    display: block;
+}
+
+@media screen and (min-width: 360px){
+     #themeToggle {
+        left: 87%;
+    }
+    #back {
+        left:89%;
+    }
+
+    .trademark {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #themeToggle {
+       left: 90%;
+   }
+   #back {
+       left:91%;
+   }
+
+   .trademark {
+       margin-left: 23%;
+   }
+}
+
+@media screen and (min-width: 800px){
+    #themeToggle {
+       left: 93%;
+   }
+   #back {
+       left:94%;
+   }
+
+   .trademark {
+       margin-left: 32%;
+   }
+
+   .links {
+    margin-left: 20px;
+   }
+}
+
+@media screen and (min-width: 1150px){
+    #themeToggle {
+       left: 95%;
+   }
+   #back {
+       left:96%;
+   }
+
+   .trademark {
+       margin-left: 39%;
+   }
+}
+
+@media screen and (min-width: 1600px){
+    #themeToggle {
+        left: 96%;
+    }
+
+   .trademark {
+       margin-left: 40%;
+   }
+}
+

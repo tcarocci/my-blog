@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#themeToggle {
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 83%;
+    top:5%;
+}
+
+body.dark-mode #themeToggle {
+    color: rgb(3, 3, 3);
+    background-color: rgb(255, 255, 255);
+}
+
+
+.horizontal-lines {
+    position: absolute;
+    width: 100%;
+    border-bottom: 14px double black;
+    bottom: 90%;
+}
+
+body.dark-mode .horizontal-lines {
+    border-bottom: 14px double rgb(255, 255, 255);
+}
+
+.vertical-lines {
+    position: absolute;
+    height: 100%;
+    border-right: 14px double black;
+    right: 50%;
+    margin-top: 89px;
+}
+
+body.dark-mode .vertical-lines {
+
+    border-right: 14px double rgb(255, 255, 255);
+}
+
+.blog-text {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    position: absolute;
+    right: 64%;
+    top: 31%;
+    z-index: 99;   
+}
+
+body.dark-mode .blog-text{
+    color: black;
+}
+
+.blog-circle {
+    padding: 22%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(253, 241, 185), rgb(255, 220, 21),
+     rgba(252, 188, 50, 0.932), rgb(255, 187, 2), 
+     rgba(172, 117, 0, 0.863), rgba(100, 69, 0, 0.993));
+    position: absolute;
+    right: 55%;
+    top:24%; 
+}
+
+
+h2 {
+    font-size: 12px;
+    position: absolute;
+    right: 8%;
+    top: 20%; 
+}
+
+label[for=username] {
+    font-size: 10px;
+    position: absolute;
+    right: 36%;
+    top: 23%;
+}
+
+#username {
+    position: absolute;
+    right: 0%;
+    top: 25%;
+    width: 47%;
+}
+
+label[for=title] {
+    font-size: 10px;
+    position: absolute;
+    right: 43%;
+    top: 28%;
+}
+
+#title {
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 47%;
+}
+
+label[for=content] {
+    font-size: 10px;
+    position: absolute;
+    right: 39%;
+    top: 33%;
+}
+
+#content {
+    position: absolute;
+    right: 0%;
+    top: 35%;
+    width: 47%;
+}
+
+#button {
+    margin:2px;
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    width:47%;
+    height: 30px;
+}
+
+body.dark-mode #button {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (min-width: 360px){
+h2 {
+    font-size: 4vw;
+    right: 6%;
+    top: 20%; 
+}
+
+label[for=username] {
+    font-size: 3vw;
+    right: 36%;
+    top: 23%;
+}
+
+#username {
+    top: 25%;
+}
+
+label[for=title] {
+    font-size: 3vw;
+    right: 43%;
+    top: 28%;
+}
+
+#title {
+    top: 30%;
+    margin: 2px;
+}
+
+label[for=content] {
+    font-size: 3vw;
+    right: 38%;
+    top: 33%;
+}
+
+#content {
+    top: 35%;
+}
+
+#button {
+    right: 0%;
+    width: 48%;
+}
+
+.blog-circle {
+}
+}
+
+@media  screen and (min-width: 405px) {
+    .blog-text{
+        font-size: 24px;
+        right: 60%;
+        top: 32%;
+    }
+
+
+}
+
+@media  screen and (min-width: 455px) {
+    .blog-text{
+        right: 64%;
+        top: 33%;
+    }
+
+    #themeToggle {
+        left: 87%;
+    }
+    
+    
+}
+
+@media screen and (min-width: 600px){
+    h2 {
+        top: 20%; 
+    }
+    
+    label[for=username] {
+        top: 30%;
+    }
+    
+    #username {
+        top: 34%;
+    }
+    
+    label[for=title] {
+        right: 42%;
+        top: 38%;
+    }
+    
+    #title {
+        top: 42%;
+    }
+    
+    label[for=content] {
+        top: 46%;
+    }
+    
+    #content {
+        top: 50%;
+    }
+
+    .blog-circle {
+        margin-left: 1.5%;
+    }
+    .blog-text {
+        font-size: 30px;    
+        right: 65%;
+        top: 38%;
+    }
+    #button {
+        top: 55%;
+    }
+}
+
+@media  screen and (min-width: 760px) {
+    .blog-text{
+        font-size: 40px;
+        right: 65%;
+        top: 41%;
+    }
+
+    #themeToggle {
+        left: 92%;
+    }
+    
+}
+
+@media  screen and (min-width: 950px) {
+    .blog-text{
+        font-size: 50px;
+        right: 66%;
+        top: 44%;
+    }
+    
+}
+
+@media screen and (min-width: 1100px){
+    h2 {
+        font-size: 40px;
+        right: 9%;
+        top: 20%; 
+    }
+    
+    label[for=username] {
+        font-size: 35px;
+        top: 30%;
+    }
+    
+    #username {
+        top: 34%;
+    }
+    
+    label[for=title] {
+        right: 42%;
+        top: 38%;
+    }
+    
+    #title {
+        top: 42%;
+    }
+    
+    label[for=content] {
+        top: 46%;
+    }
+    
+    #content {
+        top: 50%;
+    }
+    
+    #button {
+        width: 47%;
+    }
+
+    #themeToggle {
+        left: 94%;
+    }
+
+
+}
+
+@media screen and (min-width: 1260px){ 
+    label[for=username] {
+        right: 38%;
+        top: 34%;
+    }
+    
+    #username {
+        top: 39%;
+    }
+    
+    label[for=title] {
+        font-size: 40px;
+        right: 43%;
+        top: 42%;
+    }
+    
+    #title {
+        top: 47%;
+    }
+    
+    label[for=content] {
+        right: 39%;
+        font-size: 40px;
+        top: 50%;
+    }
+    
+    #content {
+        top: 55%;
+    }
+    
+    #button {
+        top: 60%;
+    }
+
+    .blog-text{
+        font-size: 50px;
+        right: 66%;
+        top: 44%;
+    }
+
+}
+@media  screen and (min-width: 1400px) {
+    .blog-text{
+        right: 63%;
+        top: 42%;
+    }
+    .blog-circle {
+        padding: 20pc;
+        right: 53%;
+        top:17%;
+    }
+
+    #themeToggle {
+        left: 95%;
+    }
+    
+}
+
+@media  screen and (min-width: 1600px) {
+    h2 {
+        right: 15%; 
+    }
+
+    label[for=username] {
+        right: 40%;
+    }
+
+    label[for=title] {
+        right: 44%;
+    }
+
+    label[for=content] {
+        right: 41%;
+    }
+
+    .blog-circle {
+        padding: 20pc;
+        right: 53%;
+        top:17%;
+    }
+    
+}
+
